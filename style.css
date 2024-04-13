@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.player-input {
+    margin-top: 10px;
+}
+
+.player-input label {
+    margin-right: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.score {
+    margin-top: 20px;
+}
+
+.score-item {
+    margin-bottom: 10px;
+}
+
+.reset-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset-button:hover {
+    background-color: #45a049;
+}
+
+.winner-message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Additional styles for player name cards */
+.player-card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+/* Additional dark mode styles */
+.board.dark-mode {
+    background-color: #555;
+}
+
+.dark-mode .cell {
+    background-color: #666;
+}
+
+.dark-mode .reset-button {
+    background-color: #555;
+}
+
+.dark-mode .reset-button:hover {
+    background-color: #444;
+}
+
+.dark-mode .board {
+    background-color: #555;
+}
+
+.dark-mode .cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #444;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dark-mode .cell:hover {
+    background-color: #333;
+}
