@@ -28,4 +28,4 @@ To run the game locally, follow these steps:
 2. Open the `index.html` file in your web browser.
 
 
-Hosted website link : 
+Hosted website link : https://thebughunter17.github.io/Tic-tac-toe-/
